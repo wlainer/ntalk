@@ -4,8 +4,33 @@
 </header>
 
 <section>
-	<p>Bem vindo <%- usuario.nome %></p>
+	<form action="/contato" method="post">
+		<input type="text" name="contato[nome]" placeholder="Nome">
+		<input type="text" name="contato[email]" placeholder="Email">
+		<button type="submit">Cadastrar</button>
+	</form>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Email</th>
+				<th>Acao</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<% contatos.forEach(function(contato,index) { %>
+				<tr>
+					<td><%- contato.nome %></td>
+					<td><%- contato.email %></td>
+					<td><a href"/contato/<%- index %>">Detalhes</td>
+				</tr>
+			<% }) %>
+		</tbody>
+	</table>
 </section>
+			
 
 <% include ../exit %>
 <% include ../footer %>
