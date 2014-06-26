@@ -17,7 +17,7 @@ module.exports = function(app) {
 		},
 		show: function(req, res) {
 			var id = req.params.id,
-				contato = req.usuario.contatos[id],
+				contato = req.session.usuario.contatos[id],
 				params = {contato: contato, id: id};
 			res.render('contatos/show', params);
 		},
@@ -33,7 +33,7 @@ module.exports = function(app) {
 		update: function (req, res) {
 			var contato = req.body.contato,
 				usuario = req.session.usuario;
-			usuario.contato[req.params.id] = contato;
+			usuario.contatos[req.params.id] = contato;
 			res.redirect('/contatos');
 		},
 		destroy: function (req, res) {

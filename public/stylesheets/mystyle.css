@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #ccc;
+	text-align: center;
+}
+
+#tudo {
+	width: 440px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#conteudo {
+	padding: 5px;
+	background-color: #eee;
+}
