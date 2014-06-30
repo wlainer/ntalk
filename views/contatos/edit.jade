@@ -1,0 +1,14 @@
+extend ../layout
+
+block content
+	header
+		h2 Ntalk - Editar contato
+
+	section
+		form(action="/contato/#{id}" method="post")
+			input(type="hidden" name="_method" value="put")
+			label Nome:
+			input(type="text" name="contato[nome]" value="#{contato.nome}")
+			label E-mail:
+			input(type="text" name="contato[email]" value="#{contato.email}")
+			button(type="submit") Atualizar

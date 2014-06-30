@@ -1,0 +1,13 @@
+extend ../layout
+
+block content
+	header
+		h2 Ntalk - Dados do contato
+
+		section
+			form(action="/contato/#{id}" method="post")
+				input(type="hidden" name="_method" value="delete")
+				label Nome: #{contato.nome}
+				label Email: #{contato.email}
+				button(type="submit") Excluir
+				a(href="/contato/#{id}/editar") Editar

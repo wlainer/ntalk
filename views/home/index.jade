@@ -1,0 +1,13 @@
+extend ../layout
+
+block content
+	header
+		h1 Ntalk
+		h4 Bem-vindo!
+	section
+		form(action="/entrar" method="post")
+			input(type="text" name="usuario[nome]" placeholder="Digite seu nome.")
+			br
+			input(type="text" name="usuario[email]" placeholder="Digite seu e-mail.")
+			br
+			button(type="submit") Entrar

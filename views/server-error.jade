@@ -1,0 +1,15 @@
+extend layout
+
+block content
+	header
+		h1 Ntalk
+		h4 Aconteceu algo terrível :(
+
+	p
+		| Veja os detalhes do erro: <br>#{error.message}
+
+	hr
+
+	p
+		| Que tal voltar 
+		a(href="/") home page</a>? :)

@@ -4,7 +4,7 @@ var express = require('express')
    , error = require('./middleware/error');
 
 app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
+app.set('view engine', 'jade');
 app.use(express.cookieParser('ntalk'));
 app.use(express.session());
 app.use(express.json());
