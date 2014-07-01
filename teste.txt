@@ -1,0 +1,21 @@
+ O volume na unidade D ‚ Arquivos
+ O N£mero de S‚rie do Volume ‚ 5ECD-E9A3
+
+ Pasta de D:\Temp\Nodejs\ntalk
+
+01/07/2014  13:15    <DIR>          .
+01/07/2014  13:15    <DIR>          ..
+30/06/2014  15:05               747 app.js
+24/06/2014  13:18    <DIR>          bin
+26/06/2014  14:22    <DIR>          controllers
+26/06/2014  15:37    <DIR>          middleware
+25/06/2014  13:35    <DIR>          models
+30/06/2014  15:05    <DIR>          node_modules
+30/06/2014  15:05               312 package.json
+25/06/2014  15:39    <DIR>          public
+25/06/2014  13:39               119 README.md
+26/06/2014  16:26    <DIR>          routes
+01/07/2014  13:15                 0 teste.txt
+30/06/2014  15:05    <DIR>          views
+               4 arquivo(s)          1.178 bytes
+              10 pasta(s)   153.173.581.824 bytes dispon¡veis
